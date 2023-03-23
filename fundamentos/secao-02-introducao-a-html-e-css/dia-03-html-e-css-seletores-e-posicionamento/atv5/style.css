@@ -1,14 +1,10 @@
-ul li {
+ol li {
     background-color: yellow;
 }
-ul li a {
-    text-decoration: none;
-    color: black;
-}
-ul li:nth-child(even) , ul li:nth-child(even) a{
+ol li:nth-child(even){
     color: green;
 }
-ul li:nth-child(odd) , ul li:nth-child(odd) a{
+ul li:nth-child(odd){
     text-transform: lowercase;
 }
 h1, h2, h3{
@@ -23,4 +19,33 @@ li {
 }
 li em {
     font-weight: bold;
+}
+ul li:not(:nth-child(n + 4)){
+    text-decoration: none;
+    color: blue;
+}
+.java {
+    background-color: pink;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    font-weight: bold;
+}
+#stack:hover {
+    color: orange;
+}
+#w3s:hover {
+    color: green
+}
+#mdn:hover {
+    color: black;
+}
+#devdoc:hover {
+    color: yellow;
+}
+#trybe:hover {
+    color: green;
 }
