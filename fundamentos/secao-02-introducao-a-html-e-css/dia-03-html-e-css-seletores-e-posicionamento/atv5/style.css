@@ -1,0 +1,12 @@
+ul li {
+    background-color: yellow;
+}
+ul li a {
+    text-decoration: none;
+}
+ul li:nth-child(even) , ul li:nth-child(even) a{
+    color: green;
+}
+ul li:nth-child(odd) , ul li:nth-child(odd) a{
+    text-transform: lowercase;
+}
