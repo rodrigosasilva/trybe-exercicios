@@ -3,10 +3,24 @@ ul li {
 }
 ul li a {
     text-decoration: none;
+    color: black;
 }
 ul li:nth-child(even) , ul li:nth-child(even) a{
     color: green;
 }
 ul li:nth-child(odd) , ul li:nth-child(odd) a{
     text-transform: lowercase;
+}
+h1, h2, h3{
+    color: red;
+}
+h1, h2, h3.em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
 }
