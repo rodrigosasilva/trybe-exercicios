@@ -1,0 +1,13 @@
+h1, p {
+    text-align: center;
+}
+ol li:hover {
+    background-color: black;
+    color: aliceblue;
+}
+ol li:active {
+    color: aqua;
+}
+li {
+    list-style: none;
+}

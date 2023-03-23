@@ -1,0 +1,13 @@
+div:hover {
+    border: 5px solid black;
+}
+div {
+    line-height: 40px;
+}
+h3 {
+    padding: 16px;
+    color: aliceblue;
+}
+div:nth-child(odd) {
+    font-style: italic;
+}
