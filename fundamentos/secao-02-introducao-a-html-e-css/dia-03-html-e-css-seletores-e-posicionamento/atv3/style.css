@@ -1,10 +1,13 @@
 h1, p {
     text-align: center;
 }
-li:hover {
+ol li:hover {
     background-color: black;
     color: aliceblue;
 }
-li:active {
+ol li:active {
     color: aqua;
+}
+li {
+    list-style: none;
 }
