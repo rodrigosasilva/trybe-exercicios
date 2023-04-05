@@ -39,10 +39,22 @@ for (let index = numbers.length -1; index >= 0; index -= 1) {
 console.log(newNumbers);
 */
 //Escreva um algoritmo que, dado um valor n positivo, ou seja, n > 1, imprima na tela um quadrado feito de asteriscos de tamanho n. Por exemplo:
+// let n = 5;
+// let sinal = '*';
+// let line = '';
+// for (let index = 0; index < n; index += 1) {
+//   line = line + sinal;
+// }
+// for (let secondIndex = 0; secondIndex < n; secondIndex += 1) {
+//   console.log(line);
+// }
+
+//Faça o mesmo algoritmo que antes, mas de modo que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
 let n = 5;
+let sinal = '*';
+let line = '';
+
 for (let index = 0; index <= n; index += 1) {
-  console.log('*');
-  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
-    console.log('*');
-  }
+  console.log(line);
+  line = line + sinal;
 }
