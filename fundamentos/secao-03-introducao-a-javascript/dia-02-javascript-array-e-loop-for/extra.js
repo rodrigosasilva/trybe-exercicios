@@ -42,19 +42,33 @@ console.log(newNumbers);
 // let n = 5;
 // let sinal = '*';
 // let line = '';
+// exercicios/fundamentos-3.5
 // for (let index = 0; index < n; index += 1) {
 //   line = line + sinal;
 // }
 // for (let secondIndex = 0; secondIndex < n; secondIndex += 1) {
 //   console.log(line);
+//
+// for (let index = 0; index <= n; index += 1) {
+//   line = line + sinal;
+// }
+// for (let index = 0; index <= n; index += 1) {
+//   comsole.log(line);
 // }
 
 //Faça o mesmo algoritmo que antes, mas de modo que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
 let n = 5;
 let sinal = '*';
 let line = '';
+// exercicios/fundamentos-3.5
 
 for (let index = 0; index <= n; index += 1) {
   console.log(line);
   line = line + sinal;
 }
+
+for (let index = 0; index <= n; index += 1) {
+  console.log(line);
+  line = line + sinal;
+}
+
