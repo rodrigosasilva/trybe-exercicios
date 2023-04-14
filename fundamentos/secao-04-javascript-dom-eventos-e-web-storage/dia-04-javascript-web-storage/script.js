@@ -1,46 +1,83 @@
-const backgroundColors = document.querySelectorAll('#background-color button');
-const whiteButton = backgroundColors[0];
-const blackButton = backgroundColors[1];
-const greenButton = backgroundColors[2];
-const blueButton = backgroundColors[3];
-const yellowButton = backgroundColors[4];
-
-const fontColors = document.querySelectorAll('#font-color button');
-const blackFont = fontColors[0];
-const redFont = fontColors[1];
-const whiteFont = fontColors[2];
-
-const mainContent = document.querySelector('main');
-
-const changeBackColor = (element) => {
-  if (element.target === whiteButton) {
-    mainContent.style.backgroundColor = 'white';
-  } else if (element.target === blackButton) {
-    mainContent.style.backgroundColor = 'black';
-  } else if (element.target === greenButton) {
-    mainContent.style.backgroundColor = 'green';
-  } else if (element.target === blueButton) {
-    mainContent.style.backgroundColor = 'blue';
-  } else if (element.target === yellowButton) {
-    mainContent.style.backgroundColor = 'yellow';
+window.onload = () => {
+  const setBackgroundColor = (color) => {
+    let content = document.querySelector(".content")
+    content.style.backgroundColor = color
+    localStorage.setItem("backgroundColor", color)
   }
-}
-whiteButton.addEventListener('click', changeBackColor);
-blackButton.addEventListener('click', changeBackColor);
-greenButton.addEventListener('click', changeBackColor);
-blueButton.addEventListener('click', changeBackColor);
-yellowButton.addEventListener('click', changeBackColor);
-
-const changeFontColor = (element) => {
-  if (element.target === blackFont) {
-    mainContent.style.color = 'black';
-  } else if (element.target === redFont) {
-    mainContent.style.color = 'red';
-  } else if (element.target === whiteFont) {
-    mainContent.style.color = 'white';
+  const setFontColor = (color) => {
+    let paragraphs = document.querySelectorAll(".paragraph")
+    for (let index = 0; index < paragraphs.length; index += 1) {
+      paragraphs[index].style.color = color
+    }
+    localStorage.setItem("fontColor", color)
   }
+  const setFontSize = (size) => {
+    let paragraphs = document.querySelectorAll(".paragraph")
+    for (let index = 0; index < paragraphs.length; index += 1) {
+      paragraphs[index].style.fontSize = size
+    }
+    localStorage.setItem("fontSize", size)
+  }
+  const setLineHeight = (height) => {
+    let paragraphs = document.querySelectorAll(".paragraph")
+    for (let index = 0; index < paragraphs.length; index += 1) {
+      paragraphs[index].style.lineHeight = height
+    }
+    localStorage.setItem("lineHeight", height)
+  }
+  const setFontFamily = (family) => {
+    let paragraphs = document.querySelectorAll(".paragraph")
+    for (let index = 0; index < paragraphs.length; index += 1) {
+      paragraphs[index].style.fontFamily = family
+    }
+    localStorage.setItem("fontFamily", family)
+  }
+  // Cor de fundo da tela;
+  let backgroundColorButtons = document.querySelectorAll("#background-color>button")
+  for (let index = 0; index < backgroundColorButtons.length; index += 1) {
+    backgroundColorButtons[index].addEventListener("click", (event) => {
+      setBackgroundColor(event.target.innerHTML)
+    })
+  }
+  // Cor do texto;
+  let fontColorButtons = document.querySelectorAll("#font-color>button")
+  for (let index = 0; index < fontColorButtons.length; index += 1) {
+    fontColorButtons[index].addEventListener("click", (event) => {
+      setFontColor(event.target.innerHTML)
+    })
+  }
+  // Tamanho da fonte
+  let fontSizeButtons = document.querySelectorAll("#font-size>button")
+  for (let index = 0; index < fontSizeButtons.length; index += 1) {
+    fontSizeButtons[index].addEventListener("click", (event) => {
+      setFontSize(event.target.innerHTML)
+    })
+  }
+  // Espaçamento entre as linhas do texto;
+  let lineHeightButtons = document.querySelectorAll("#line-height>button")
+  for (let index = 0; index < lineHeightButtons.length; index += 1) {
+    lineHeightButtons[index].addEventListener("click", (event) => {
+      setLineHeight(event.target.innerHTML)
+    })
+  }
+  // Tipo da fonte (_Font family_).
+  let fontFamilyButtons = document.querySelectorAll("#font-family>button")
+  for (let index = 0; index < fontFamilyButtons.length; index += 1) {
+    fontFamilyButtons[index].addEventListener("click", (event) => {
+      setFontFamily(event.target.innerHTML)
+    })
+  }
+  const initialize = () => {
+    let backgroundColor = localStorage.getItem("backgroundColor")
+    if (backgroundColor) setBackgroundColor(backgroundColor)
+    let fontColor = localStorage.getItem("fontColor")
+    if (fontColor) setFontColor(fontColor)
+    let fontSize = localStorage.getItem("fontSize")
+    if (fontSize) setFontSize(fontSize)
+    let lineHeight = localStorage.getItem("lineHeight")
+    if (lineHeight) setLineHeight(lineHeight)
+    let fontFamily = localStorage.getItem("fontFamily")
+    if (fontFamily) setFontFamily(fontFamily)
+  }
+  initialize()
 }
-
-blackFont.addEventListener('click', changeFontColor);
-redFont.addEventListener('click', changeFontColor);
-whiteFont.addEventListener('click', changeFontColor);
