@@ -24,6 +24,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 2-5: _Projeto - Lessons Learned_
 
 
+
 ##### Seção 3: Introdução à JavaScript
 
 - [x] 3-1: _JavaScript - Primeiros passos_
@@ -72,4 +73,3 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 7-4: _JavaScript ES6 - spread operator, rest parameters e object destructuring_
 - [ ] 7-5: _JavaScript ES6 - Array destructuring, Defalt destructuring, Object property shorthand e default parameters_
 - [ ] 7-6: _Projeto - Zoo functions_
-
