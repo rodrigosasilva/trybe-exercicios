@@ -70,4 +70,29 @@ const countries = [
 const populationTotal = countries
   .reduce((acc, arr) => (acc + arr.population), 0);
 
-console.log(populationTotal);
+console.log('População total dos países:', populationTotal);
+
+// 2 - Calcule a área total de todos os países.
+
+const areaTotal = countries
+  .reduce((acc, arr) => (acc + arr.area), 0);
+
+console.log('Área total dos países:', areaTotal);
+
+// 🚀 3 - Encontre o país com o maior nome.
+
+const biggerName = countries
+  .reduce((bigger, country) => bigger.name.length > country.name.length ? bigger : country);
+
+console.log('País com maior nome:', biggerName);
+
+// 🚀 4 - Retorne a quantidade de vezes que a letra a maiúscula ou minúscula aparece no array de nomes.
+
+const countLetterA = countries
+  .map((name => name.name))
+  .join('').toLowerCase().split('')
+  .reduce((acc, curr) => {
+    return (curr === 'a') ? acc + 1 : acc
+  }, 0);
+
+console.log(countLetterA);
