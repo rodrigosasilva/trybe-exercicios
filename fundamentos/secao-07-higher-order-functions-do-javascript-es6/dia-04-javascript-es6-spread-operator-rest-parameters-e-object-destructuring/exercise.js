@@ -121,3 +121,20 @@ const shipLength = (obj) => {
 console.log(shipLength(ships[0])); // 'Titanic is 269.1 meters long'
 console.log(shipLength(ships[1])); // 'Queen Mary 2 is 1132 feet long'
 console.log(shipLength(ships[2])); // 'Yamato is 256 meters long'
+
+
+// O objeto yearSeasons representa as estações do ano. Cada chave do objeto é uma estação, e o valor de cada chave é um array de strings que representa os meses daquela estação. A partir desse objeto, desestruture as estações do ano e espalhe-as em um array de meses do ano.
+
+
+const yearSeasons = {
+  spring: ['March', 'April', 'May'],
+  summer: ['June', 'July', 'August'],
+  autumn: ['September', 'October', 'November'],
+  winter: ['December', 'January', 'February'],
+};
+// yearSeasons: estações do ano.
+const {spring, summer, autumn, winter} = yearSeasons;
+
+const yearMonths = [...spring, ...summer, ...autumn, ...winter];
+
+console.log(yearMonths);
