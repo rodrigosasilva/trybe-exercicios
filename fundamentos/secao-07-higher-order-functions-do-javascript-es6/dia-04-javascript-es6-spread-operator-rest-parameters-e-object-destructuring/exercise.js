@@ -8,6 +8,13 @@ const rectangle3 = [6, 9];
 const rectangles = [rectangle1, rectangle2, rectangle3];
 
 rectangles.forEach((rectangle) => {
-  console.log(rectangleArea(...rectangle)); // Altere o parâmetro recebido por rectangleArea()
+  console.log('Área do retângulo:',rectangleArea(...rectangle)); // Altere o parâmetro recebido por rectangleArea()
 });
 
+// Crie uma função sum que, dado um número ilimitado de parâmetros, retorna a soma desses parâmetros. Ao chamar a função dessa forma : sum(4,5,6), o número 15 deve ser retornado.
+
+const sum = (...arg) => {
+  return arg.reduce((acc, curr) => acc + curr, 0);
+}
+
+console.log('Soma:',sum(4,5,6));
