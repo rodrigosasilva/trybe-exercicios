@@ -8,7 +8,7 @@ const rectangle3 = [6, 9];
 const rectangles = [rectangle1, rectangle2, rectangle3];
 
 rectangles.forEach((rectangle) => {
-  console.log('Área do retângulo:',rectangleArea(...rectangle)); // Altere o parâmetro recebido por rectangleArea()
+  console.log('Área do retângulo:', rectangleArea(...rectangle)); // Altere o parâmetro recebido por rectangleArea()
 });
 
 // Crie uma função sum que, dado um número ilimitado de parâmetros, retorna a soma desses parâmetros. Ao chamar a função dessa forma : sum(4,5,6), o número 15 deve ser retornado.
@@ -17,4 +17,34 @@ const sum = (...arg) => {
   return arg.reduce((acc, curr) => acc + curr, 0);
 }
 
-console.log('Soma:',sum(4,5,6));
+console.log('Soma:', sum(4, 5, 6));
+
+// Escreva a função personLikes, que recebe como parâmetro os objetos alex ou gunnar. Cada objeto representa uma pessoa, e a função deve retornar todos os gostos daquela pessoa, conforme mostrado abaixo:
+
+// name: nome da pessoa, age: idade, likes: gosta de, nationality: nacionalidade
+
+const alex = {
+  name: 'Alex',
+  age: 26,
+  likes: ['fly fishing'],
+  nationality: 'Australian',
+};
+
+const gunnar = {
+  name: 'Gunnar',
+  age: 30,
+  likes: ['hiking', 'scuba diving', 'taking pictures'],
+  nationality: 'Icelandic',
+};
+
+
+// complete a assinatura da função abaixo
+const personLikes = (obj) => {
+  const { name, age, likes, nationality } = obj;
+  return `${name} is ${age} years old and likes ${likes.join(', ')}.`
+};
+// <nome> tem <anos de idade> e gosta de <gostos da pessoa>
+
+// Retornos esperados:
+console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
+console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
