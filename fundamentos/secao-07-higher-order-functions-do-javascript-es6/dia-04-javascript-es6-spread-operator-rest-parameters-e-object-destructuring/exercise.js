@@ -11,6 +11,7 @@ rectangles.forEach((rectangle) => {
   console.log('Área do retângulo:', rectangleArea(...rectangle)); // Altere o parâmetro recebido por rectangleArea()
 });
 
+
 // Crie uma função sum que, dado um número ilimitado de parâmetros, retorna a soma desses parâmetros. Ao chamar a função dessa forma : sum(4,5,6), o número 15 deve ser retornado.
 
 const sum = (...arg) => {
@@ -18,6 +19,7 @@ const sum = (...arg) => {
 }
 
 console.log('Soma:', sum(4, 5, 6));
+
 
 // Escreva a função personLikes, que recebe como parâmetro os objetos alex ou gunnar. Cada objeto representa uma pessoa, e a função deve retornar todos os gostos daquela pessoa, conforme mostrado abaixo:
 
@@ -48,3 +50,42 @@ const personLikes = (obj) => {
 // Retornos esperados:
 console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
 console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
+
+
+// Escreva uma função filterPeople que, dada uma lista de pessoas, retorna todas as pessoas australianas que nasceram no século 20:
+
+const people = [
+  {
+    name: 'Nicole',
+    bornIn: 1992,
+    nationality: 'Australian',
+  },
+  {
+    name: 'Harry',
+    bornIn: 2008,
+    nationality: 'Australian',
+  },
+  {
+    name: 'Toby',
+    bornIn: 1901,
+    nationality: 'Australian',
+  },
+  {
+    name: 'Frida',
+    bornIn: 1960,
+    nationality: 'Dannish',
+  },
+  {
+    name: 'Fernando',
+    bornIn: 2001,
+    nationality: 'Brazilian',
+  },
+  // bornIn: nascido em
+];
+
+// escreva filterPeople abaixo
+
+const filterPeople = () => people
+  .filter(({ nationality, bornIn }) => bornIn > 1900 && bornIn <= 2000 && nationality === 'Australian');
+
+console.log(filterPeople());
