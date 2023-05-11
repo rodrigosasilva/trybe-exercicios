@@ -1,0 +1,18 @@
+{
+  "name": "dia-03-matchers-e-cobertura-de-codigo",
+  "version": "1.0.0",
+  "main": "exercise.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.1"
+  },
+  "description": ""
+}
