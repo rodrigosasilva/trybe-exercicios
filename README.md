@@ -61,15 +61,15 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 6-1: _Fluxo de exceções e manipulação de objetos_
 - [x] 6-2: _Primeiros passos em Jest_
-- [ ] 6-3: _Matchers e cobertura de código_
+- [x] 6-3: _Matchers e cobertura de código_
 - [x] 6-4: _Projeto - JavaScript Testes Unitários_
 
 
 ##### Seção 7: Higher Order Functions do JavaScrit ES6
 
 - [x] 7-1: _Introdução a Higher Order Functions_
-- [ ] 7-2: _Higher Order Functions - sort e map_
-- [ ] 7-3: _Higher Order Functions - filter e reduce_
-- [ ] 7-4: _JavaScript ES6 - spread operator, rest parameters e object destructuring_
-- [ ] 7-5: _JavaScript ES6 - Array destructuring, Defalt destructuring, Object property shorthand e default parameters_
+- [x] 7-2: _Higher Order Functions - sort e map_
+- [x] 7-3: _Higher Order Functions - filter e reduce_
+- [x] 7-4: _JavaScript ES6 - spread operator, rest parameters e object destructuring_
+- [x] 7-5: _JavaScript ES6 - Array destructuring, Defalt destructuring, Object property shorthand e default parameters_
 - [ ] 7-6: _Projeto - Zoo functions_
