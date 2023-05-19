@@ -1,1 +1,2 @@
-console.log('Helo world');
+import { nanoid } from 'nanoid';
+  
