@@ -64,7 +64,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-3: _Matchers e cobertura de código_
 - [x] 6-4: _Projeto - JavaScript Testes Unitários_
 
-
 ##### Seção 7: Higher Order Functions do JavaScrit ES6
 
 - [x] 7-1: _Introdução a Higher Order Functions_
@@ -72,4 +71,71 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 7-3: _Higher Order Functions - filter e reduce_
 - [x] 7-4: _JavaScript ES6 - spread operator, rest parameters e object destructuring_
 - [x] 7-5: _JavaScript ES6 - Array destructuring, Defalt destructuring, Object property shorthand e default parameters_
-- [ ] 7-6: _Projeto - Zoo functions_
+- [x] 7-6: _Projeto - Zoo functions_
+
+
+
+## Módulo de Frontend ✅
+
+##### Seção 1: Introdução Frontend e JavaScript Assíncrono
+
+- [x] 1-1: _Ambiente de desenvolvimento_
+- [x] 1-2: _JavaScript Assíncrono - Promises e Fetch_
+- [x] 1-3: _Prática - Casa de Câmbio_
+- [x] 1-4: _Async, await e testes assíncronos_
+- [x] 1-5: _Projeto - iChoveu_
+
+##### Seção 2: Introdução ao React
+
+- [ ] 2-1: _introdução ao React e ao Typescript_
+- [ ] 2-2: _Componentes React e Props_
+- [ ] 2-3: _Avançando em componentes_
+- [ ] 2-4: _Prática - Solar System_
+- [ ] 2-5: _Estados e eventos_
+- [ ] 2-6: _Formulários_
+- [ ] 2-7: _Prática - Store Back Office_
+- [ ] 2-8: _Projeto - Password Manager_
+
+##### Seção 3: Aprofundando no React
+
+- [ ] 3-1: _React Router_
+- [ ] 3-2: _useEffect_
+- [ ] 3-3: _Prática - Clonando o Twitter_
+- [ ] 3-5: _Projeto - Trybetunes_
+
+##### Seção 4: Metodologias Ágeis
+
+- [ ] 4-1: _Metodologias Ágeis_
+- [ ] 4-2: _Projeto - Front-end Online Store_
+
+##### Seção 5: Testes automatizados com React Testing Library
+
+- [ ] 5-1: _RTL - Primeiros passos_
+- [ ] 5-2: _RTL - Mocks e Inputs_
+- [ ] 5-3: _RTL - Testando React Router_
+- [ ] 5-4: _Projeto - Testes com React_
+
+##### Seção 6: Gerenciamento de estados com Redux
+
+- [ ] 6-1: _Introdução ao Redux - O estado global da aplicação_
+- [ ] 6-2: _Usando o Redux no React_
+- [ ] 6-3: _Usando o Redux no React - Prática_
+- [ ] 6-4: _Usando o Redux no React - Actions Assíncronas_
+- [ ] 6-5: _Testes em React-Redux_
+- [ ] 6-6: _Projeto - Trybe Wallet_
+
+##### Seção 7: Projeto Jogo de Trivia
+
+- [ ] 7-1: _Projeto - jogo de Trivia_
+
+##### Seção 8: Gerenciamento de estados com Redux
+
+- [ ] 8-1: _React Hooks - useState e useEffect_
+- [ ] 8-2: _Context API_
+- [ ] 8-3: _Custom Hooks_
+- [ ] 8-5: _Projeto - StarWars Datable com Context API e Hooks_
+
+
+##### Seção 9: Projeto App de Receitas
+
+- [ ] 9-1: _Projeto - App de Receitas_
