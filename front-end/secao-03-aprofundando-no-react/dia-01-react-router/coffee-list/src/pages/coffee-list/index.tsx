@@ -1,20 +1,24 @@
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { coffeeList } from '../../data';
 
 function CoffeeList() {
 
-  const navigate = useNavigate()
-
-  const handleClick = () => {
-    navigate('/');
-    // navigate(-1); // redireciona para pagina anterior
-  }
-
   return (
     <>
-      <h1>CoffeeList page</h1>
-      <button onClick={ handleClick }>
-        Página inicial
-      </button>
+      <div>
+      <h1>Nossos cafés</h1>
+      <main>
+        <ul>
+          {
+            coffeeList.map((coffee) => (
+              <Link to={ `/coffees/${coffee.slug}` } key={ coffee.id }>
+                <li>{ coffee.title }</li>
+              </Link>
+            ))
+          }
+        </ul>
+      </main>
+    </div>
     </>
 
   )
