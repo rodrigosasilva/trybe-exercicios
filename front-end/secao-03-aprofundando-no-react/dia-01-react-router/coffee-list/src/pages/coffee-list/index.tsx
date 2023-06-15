@@ -6,6 +6,7 @@ function CoffeeList() {
 
   const handleClick = () => {
     navigate('/');
+    // navigate(-1); // redireciona para pagina anterior
   }
 
   return (
