@@ -17,7 +17,14 @@ function App() {
       setCoordinates({ latitude: data.latitude, longitude: data.longitude });
       setLoading(false);
     }
-    fetchData();
+    const intervalId = setInterval(() => {
+      fetchData();
+    }, 3000);
+
+    return () => { // Essa é a função cleanup
+      clearInterval(intervalId);
+    };
+
   }, []);
 
   if (loading) {
