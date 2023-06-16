@@ -19,7 +19,15 @@ function App() {
   }, []);
 
   return (
-    <h1>International Space Station Location Tracker</h1>
+    <>
+      <h1>International Space Station Location Tracker</h1>
+      {coordinates && (
+        <>
+          <h2>{`Latitude: ${coordinates.latitude}`}</h2>
+          <h2>{`Longitude: ${coordinates.longitude}`}</h2>
+        </>
+      )}
+    </>
   );
 }
 
